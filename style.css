@@ -1,0 +1,1642 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-image: linear-gradient(45deg, black, black, black, black, rgba(255, 0, 0, 0.4));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 1px;
+    padding: 10px 50px;
+    width: 100%;
+}
+
+#headerlogo {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+nav {
+    padding: 20px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 99;
+}
+
+.dropdownedit {
+    border-bottom: 1px solid white;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 4px 4px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 6.2px;
+    list-style: none;
+    top: 1.6em;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+
+.dropdown-content a:hover {
+    color: gray;
+
+}
+
+/*  css partners page   */
+
+.partnerparagraph {
+    margin-top: 5%;
+    display: inline-block;
+    font-size: larger;
+}
+
+.partnerparagraph h2 {
+    margin-left: 600px;
+}
+
+#partnersubtitle {
+    margin-left: 550px;
+    text-decoration: underline;
+}
+
+.partnerlinks {
+    display: inline-block;
+    top: 36%;
+    margin-left: 12%;
+    position: absolute;
+}
+
+#partnertablecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.imglinkspartner {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+.imglinkspartner a {
+
+    margin-right: 3%;
+    transition: opacity 0.3s;
+}
+
+.imglinkspartner a:hover {
+    opacity: 0.5;
+}
+
+.partnertable {
+    border-bottom: 5px solid white;
+}
+
+/* css for contact us */
+
+#contact {
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 0px
+}
+
+#undercontactus {
+    font-size: 17.5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.614);
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+
+
+.accordion {
+    background-color: rgba(255, 0, 0, 0.603);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border-radius: 9px;
+    border-color: rgba(255, 0, 0, 0.603);
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+    margin-top: 30px;
+    font-weight: 700;
+    margin-left: 20%;
+}
+
+.accordion:active,
+.accordion:hover {
+    background-color: rgba(255, 0, 0, 0.885);
+}
+
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    width: 90%;
+    border-radius: 12px;
+    margin-left: 20%;
+
+}
+
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+
+.acclinks {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    transition: color 0.25s;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    display: block;
+
+}
+
+
+.acclinks:hover {
+    color: rgba(255, 0, 0, 0.885);
+}
+
+.acclinks2 {
+    color: black;
+    font-weight: 300;
+}
+
+
+.accnums {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: -20px;
+    margin-top: 8px;
+}
+
+.timings {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2px;
+    line-height: 1.2rem;
+    display: inline;
+}
+
+
+#accdiv {
+    display: inline;
+}
+
+#contactusparagraph {
+    position: absolute;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+.ast {
+    color: red;
+}
+
+#contactform {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 10px;
+
+    font-family: Arial, sans-serif;
+    padding: 60px 91px 11px;
+    width: 600px;
+
+}
+
+
+
+
+#Csub {
+    margin-left: 100px;
+    width: 200px;
+    border-radius: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: opacity 0.15s;
+}
+
+
+#Csub:hover {
+    opacity: 0.8;
+}
+
+#Csub:active {
+    opacity: 0.6;
+}
+
+#formcontctus {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.clabl {
+    color: rgba(255, 255, 255, 0.614);
+    font-weight: 400;
+
+}
+
+.cinp {
+    border-bottom-color: rgba(255, 255, 255, 0.614);
+    border-right-color: rgba(255, 255, 255, 0.614);
+    border-left-color: rgba(255, 255, 255, 0.614);
+    border-top-color: rgba(255, 255, 255, 0.614);
+
+    width: 400px;
+    height: 50px;
+    margin-top: 3px;
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+.cfdiv {
+    padding-bottom: 60px;
+}
+
+#bgts {
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+#contctfulltop {
+    display: flex;
+}
+
+#fillformbelow {
+    font-weight: 500;
+}
+
+
+/* css for career page    */
+#careersec {
+    height: 80vh;
+    padding-bottom: 50px;
+}
+
+#careerimg {
+    width: 650px;
+    margin: 20px 20px 10px 80px;
+    display: flex;
+    float: left;
+}
+
+#careertit {
+    text-align: center;
+}
+
+#careerdes {
+    font-size: 1.5em;
+    width: 700px;
+    float: right;
+    padding: 10px 20px;
+}
+
+#careercontact {
+    background-color: rgba(255, 0, 0, 0.603);
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    width: 200px;
+    margin-left: 230px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.25s;
+}
+
+#careercontact:hover {
+    background-color: rgba(255, 0, 0, 0.885)
+}
+
+
+
+/* css for insurance.html */
+
+#ins0 {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#ins1 {
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+
+#ins2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.imglinksins {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+.imglinksins a {
+
+    margin-right: 3%;
+    transition: opacity 0.3s;
+}
+
+.imglinksins a:hover {
+    opacity: 0.5;
+}
+
+.instable {
+    border-bottom: 5px solid rgba(10, 59, 157, 0.881);
+    text-align: center;
+}
+
+#axa {
+    border-radius: 50%;
+    height: 167px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#inslist li {
+    margin-bottom: 16px;
+}
+
+/*  css home page   */
+
+.homeparagraph {
+    margin-left: 13%;
+    margin-top: 5%;
+    display: inline-block;
+    font-size: larger;
+}
+
+#signupnow {
+    text-decoration: underline;
+}
+
+
+.homelinks {
+    display: inline-block;
+    top: 36%;
+    margin-left: 12%;
+    position: absolute;
+}
+
+#signuplink {
+    background-color: rgba(255, 0, 0, 0.603);
+    color: white;
+    border: 2px solid rgba(255, 0, 0, 0.603);
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 11px;
+    font-weight: 600;
+    border-radius: 27px;
+    transition: background-color 0.25s;
+}
+
+
+#loginlink {
+    background-color: rgba(255, 0, 0, 0.603);
+    color: white;
+    border: 2px solid rgba(255, 0, 0, 0.603);
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 27px;
+    transition: background-color 0.25s;
+}
+
+#loginlink:hover {
+    background-color: rgba(255, 0, 0, 0.885)
+}
+
+#signuplink:hover {
+    background-color: rgba(255, 0, 0, 0.885)
+}
+
+#loginlink:active {
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+#signuplink:active {
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+.imglinkshome {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px;
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+.imglinkshome a {
+
+    margin-right: 3%;
+    transition: opacity 0.3s;
+}
+
+.imglinkshome a:hover {
+    opacity: 0.5;
+}
+
+.hometable {
+    border-bottom: 5px solid white;
+}
+
+
+
+/* css ford.html & ferrari.html & dodge.html & infiniti.html */
+
+#page-logo {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+#videoford {
+    margin-left: 130px;
+    margin-top: 100px;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+    border-radius: 40px;
+}
+
+#car {
+    display: block;
+    position: relative;
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+#removeline {
+    border-bottom: none;
+}
+
+#car-ferrari {
+    display: block;
+    position: relative;
+    height: 140px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+#car-dodge {
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 120px;
+    text-align: center;
+    margin: auto;
+}
+
+#car-desc {
+    width: 550px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: larger;
+}
+
+#car-desc2 {
+    font-weight: bolder;
+}
+
+.first-table {
+    padding: 100px 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+#car-table th,
+#car-table td {
+    border-bottom: 5px solid rgb(18, 41, 75);
+    text-align: center;
+    border-spacing: 30px;
+}
+
+
+#car-table th {
+    font-weight: 800;
+    font-size: large;
+}
+
+#car-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title-car {
+    margin-bottom: 20px;
+    font-size: 175%;
+    font-weight: bold;
+    width: 125px;
+    border-bottom: 5px solid navy;
+
+}
+
+#title-about {
+    margin-top: 50px;
+    font-size: 175%;
+    font-weight: bold;
+    width: 125px;
+    border-bottom: 5px solid navy;
+
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.text1 {
+    color: #000000;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+/* css footer*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 2.5%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+
+footer {
+    margin-top: 2.5%;
+}
+
+.footerheading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
+
+}
+
+.titles {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+#signupp {
+    color: red;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-style: italic
+}
+
+#footer a:hover {
+    color: red;
+    transition: 0.2s;
+}
+
+.footeremail {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footeremail::placeholder {
+    color: grey;
+}
+
+#footernews {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+}
+
+#footer-bottom {
+    text-align: center;
+    padding: 7.5px;
+    height: 35px;
+    background-color: darkred;
+}
+
+/* css login */
+
+#login-page {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border: 10px solid darkred;
+    border-radius: 50px;
+    width: 450px;
+    height: 350px;
+    margin: 60px auto;
+}
+
+#login-middle-part {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+#login-checkbox-input {
+    width: 20px;
+    position: relative;
+    top: 8px;
+}
+
+#login-remember {
+    margin-top: 200px
+}
+
+#login-forgot {
+    margin-left: 20px;
+    position: relative;
+    top: 7px;
+}
+
+.login-container {
+    margin-top: 20px;
+}
+
+.login-info {
+    padding: 4px;
+}
+
+#login-email {
+    width: 250px;
+    height: 25px;
+}
+
+#login-password {
+    width: 250px;
+    height: 25px;
+}
+
+form #login-btn {
+    width: 25%;
+    height: 5%;
+    font-size: 17px;
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+#signup-btnlogin {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0px;
+
+}
+
+form #login-btn:hover {
+    background: darkred;
+}
+
+form #signup-btnlogin:hover {
+    background: darkred;
+}
+
+
+/*  css sign up  */
+
+#signup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 10px solid darkred;
+    border-radius: 50px;
+    width: 450px;
+    height: 490px;
+    margin: auto;
+}
+
+#signup-title {
+    text-align: center;
+}
+
+.PartOnesignup {
+    margin-bottom: 100px;
+}
+
+
+
+.infos {
+    padding: 4px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#nothing {
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    bottom: 40px;
+
+}
+
+
+form #submit-btnsignup {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    left: 140px;
+
+}
+
+#exiacc {
+    width: 180px;
+    position: relative;
+
+}
+
+#login-btnsignup {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    right: 140px;
+    text-decoration: none;
+    text-align: center;
+}
+
+form #submit-btnsignup:hover {
+    background: darkred;
+}
+
+form #login-btnsignup:hover {
+    background: darkred;
+}
+
+
+
+
+/* News page     */
+
+
+
+
+#newtop {
+    width: 100%;
+    min-height: 100vh;
+    padding: 90px 50px;
+}
+
+.newtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.newcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.newslink {
+    text-decoration: none;
+}
+
+.newcard {
+    background-color: rgb(0, 0, 0);
+    width: 15em;
+    height: 15em;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(60, 44, 44);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.newcard img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newdec {
+    font-size: large;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-top: 20px;
+}
+
+/* css about us*/
+
+#mainabout {
+    margin-left: 17%;
+    margin-top: 5%;
+    display: inline-block;
+    font-size: larger;
+
+}
+
+#aboutus {
+    font-size: 20px;
+}
+
+#aboutcontent {
+    padding: 20px;
+    display: flex;
+}
+
+#whocontent {
+    padding: 20px;
+    display: flex;
+
+}
+
+#aboutimg {
+    margin-left: 150px;
+}
+
+#whoimg {
+    margin-right: 150px;
+}
+
+#whatwedo {
+    margin-left: 175px;
+    padding: 20px;
+}
+
+#abouttitle {
+    color: white;
+    margin-left: 40%;
+}
+
+.aboutus-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#whotitle {
+    color: white;
+    margin-left: 37%;
+}
+
+#whattitle {
+    color: white;
+    margin-left: 25%;
+}
+
+/*  css payment   */
+
+#payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 10px solid darkred;
+    border-radius: 50px;
+    width: 650px;
+    height: 650px;
+    margin: auto;
+}
+
+.PartOne {
+    margin: 20px;
+}
+
+.PartTwo {
+    margin: 20px;
+
+}
+
+.infos {
+    padding: 4px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.PartTwo p {
+    font-weight: bold;
+}
+
+form .submit-btn {
+    width: 40%;
+    height: 5%;
+    font-size: 17px;
+    background: red;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+form .submit-btn:hover {
+    background: darkred;
+}
+
+/* css for mustang.html */
+
+#carname {
+    width: 350px;
+    margin-top: 10%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-left: 5%;
+    top: 55px;
+    position: relative;
+    font-weight: bold;
+}
+
+#carinfo {
+    width: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 50%;
+    position: relative;
+    top: 65px;
+    font-style: italic;
+}
+
+#carinfo2 {
+    width: 700px;
+    height: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    position: relative;
+    top: 70px;
+
+}
+
+#cargal {
+    top: -220px;
+    right: -900px;
+    position: relative;
+    max-width: 100%;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.TDbutton {
+    position: relative;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: -5%;
+    top: 75px;
+    left: 0px;
+    background-color: rgba(255, 0, 0, 0.603);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.timg {
+    height: 200px;
+    transition: transform 0.25s ease;
+    width: auto;
+}
+
+#carimg img:hover {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+#carspecs {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 1200px;
+    ;
+    height: auto;
+
+}
+
+#carspecs td {
+    border-left: 4px solid white;
+    border-bottom: 5px solid darkred;
+    text-align: center;
+    font-size: larger;
+    padding: 5px 0px;
+}
+
+#carspecs caption {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+    width: 0;
+    height: 0;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cuscarimg {
+    position: relative;
+    width: 1200px;
+    height: 538px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1%;
+    border: 5px solid #555;
+    max-width: 100%;
+    margin-top: 2%;
+}
+
+#CTitle {
+    text-align: center;
+
+}
+
+
+#cline {
+    margin-top: 17%;
+}
+
+#divbuttons {
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+#cbutton1 {
+    background-color: #750b19;
+    ;
+}
+
+#cbutton2 {
+    background-color: #f9f7f7;
+    color: black;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#cbutton3 {
+    background-color: #08111a;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+#cbutton4 {
+    background-color: #02b4ea;
+    color: black;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.cbutton {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 15px 5px 2px 2px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    color: white;
+    transition: all ease-in-out 0.4s;
+
+}
+
+.cbutton:hover {
+    border: 1px solid #888;
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+/* extended warranty */
+
+#f3 {
+    bottom: 309px;
+    max-width: 400px;
+    margin-left: 410px;
+    position: relative;
+
+}
+
+
+
+
+#gg {
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+}
+
+.lname {
+    position: relative;
+    top: 30px;
+}
+
+.carc {
+    position: relative;
+    top: 60px;
+}
+
+
+.rdate {
+    position: relative;
+    top: 95px;
+}
+
+
+.phn {
+    position: relative;
+    top: 140px;
+}
+
+#sub {
+    position: relative;
+    bottom: 100px;
+    border-radius: 25%;
+    background-color: darkred;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    justify-content: center;
+}
+
+
+
+.pdate {
+    position: relative;
+    top: 30px;
+}
+
+
+.vp {
+    position: relative;
+    top: 35px;
+    width: 380px;
+}
+
+
+
+.Pcode {
+    position: relative;
+    top: 38px;
+}
+
+.km {
+    width: 100px;
+}
+
+#RD {
+    width: 100px;
+}
+
+
+.w1 {
+
+    padding-top: 45px;
+
+    margin-left: 20%;
+    border-left-color: darkred;
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: darkred;
+    border-style: solid;
+    width: 900px;
+
+    text-align: center;
+
+
+
+    border-radius: 50px;
+
+}
+
+
+#brb {
+    left: 30px;
+    margin-left: 90px;
+    max-width: 400px;
+}
+
+
+#RD1 {
+    margin-left: 15px;
+    width: 100px;
+}
+
+
+#valid {
+    width: 100px;
+}
+
+/* css customization */
+
+
+
+
+#CuTitle {
+    margin-top: 5%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#CuDetails {
+    margin-top: 1%;
+    text-align: center;
+}
+
+#cnewtop {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 50px;
+}
+
+.cnewtitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cnewcontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cnewslink {
+    text-decoration: none;
+}
+
+.cnewcard {
+    background-color: rgb(0, 0, 0);
+    width: 20em;
+    height: 17em;
+    margin: 3px;
+    box-shadow: 0 5px 25px rgb(60, 44, 44);
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.cnewcard img {
+    width: 100%;
+    border-radius: 5px;
+    height: 210px;
+
+}
+
+.cdesc {
+    font-size: large;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-top: 20px;
+    text-align: center;
+}
