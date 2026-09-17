@@ -1237,7 +1237,6 @@ form .submit-btn:hover {
 
 #carinfo2 {
     width: 700px;
-    height: 75px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
@@ -1247,12 +1246,8 @@ form .submit-btn:hover {
 }
 
 #cargal {
-    top: -220px;
-    right: -900px;
-    position: relative;
     max-width: 100%;
-    margin-right: 3%;
-    margin-left: 2%;
+    margin: 30px auto 0;
 }
 
 .TDbutton {
@@ -1314,9 +1309,6 @@ form .submit-btn:hover {
     -moz-animation: fadeIn ease 10s;
     -o-animation: fadeIn ease 10s;
     -ms-animation: fadeIn ease 10s;
-    width: 0;
-    height: 0;
-
 }
 
 @keyframes fadeIn {
@@ -2029,8 +2021,6 @@ iframe {
 
     #cargal {
         margin: 20px auto;
-        right: 0;
-        top: 0;
     }
 
     .TDbutton {
