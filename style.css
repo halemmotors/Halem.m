@@ -483,7 +483,7 @@ nav a:hover {
 .homelinks {
     display: inline-block;
     top: 36%;
-    margin-left: 12%;
+    right: 5%;
     position: absolute;
 }
 
@@ -802,6 +802,12 @@ footer {
     flex-direction: column;
     margin-right: 2.5rem;
 
+}
+
+.footeremail-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
 }
 
 .titles {
@@ -1639,4 +1645,548 @@ form .submit-btn:hover {
     padding-right: 23px;
     margin-top: 20px;
     text-align: center;
+}
+
+/* ==========================================================================
+   RESPONSIVE / MOBILE STYLES
+   ========================================================================== */
+
+html {
+    overflow-x: hidden;
+}
+
+/* The footer used a fixed height that clipped/overlapped its content
+   whenever the columns wrapped onto more than one row (any viewport
+   narrower than ~1400px). Let it grow with its content instead. */
+#footer {
+    height: auto;
+    min-height: 200px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    row-gap: 20px;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Mobile nav toggle button ---------- */
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    z-index: 100;
+}
+
+.nav-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Tablet breakpoint
+   ========================================================================== */
+@media (max-width: 1000px) {
+
+    /* header / nav */
+    header {
+        flex-wrap: wrap;
+        padding: 12px 20px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    nav {
+        padding: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        order: 3;
+        transition: max-height 0.3s ease;
+    }
+
+    nav#siteNav.nav-open {
+        max-height: 1200px;
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    nav > ul > li > a,
+    nav .company-link {
+        display: block;
+        padding: 12px 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.dropdown-open .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        position: static;
+        border: none;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding-left: 15px;
+        top: auto;
+    }
+
+    /* home page */
+    .homeparagraph {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 8%;
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .homelinks {
+        position: static;
+        display: flex;
+        gap: 15px;
+        margin: 20px 5%;
+    }
+
+    .imglinkshome,
+    .imglinkspartner,
+    .imglinksins {
+        display: block;
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .imglinkshome tr,
+    .imglinkspartner tr,
+    .imglinksins tr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hometable,
+    .partnertable,
+    .instable {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    /* partners page */
+    .partnerparagraph {
+        margin-top: 8%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .partnerparagraph h2,
+    #partnersubtitle {
+        margin-left: 0;
+    }
+
+    .partnerlinks {
+        position: static;
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    /* contact us */
+    #contctfulltop {
+        flex-direction: column;
+    }
+
+    #accdiv {
+        position: static;
+    }
+
+    #contactusparagraph {
+        position: static;
+        margin: 20px 5%;
+        font-size: 1.3rem;
+    }
+
+    .accordion,
+    .panel {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #bgts {
+        margin-left: 0;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    #contactform {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .cinp {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #Csub {
+        margin-left: 0;
+    }
+
+    /* about us */
+    #mainabout {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #abouttitle,
+    #whotitle,
+    #whattitle {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #aboutcontent,
+    #whocontent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #aboutimg,
+    #whoimg {
+        margin: 20px auto 0;
+    }
+
+    #whatwedo {
+        margin-left: 0;
+    }
+
+    /* careers */
+    #careersec {
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #careerimg {
+        float: none;
+        margin: 0 0 20px 0;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #careerdes {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #careercontact {
+        margin-left: 0;
+    }
+
+    /* insurance */
+    #ins0,
+    #ins1,
+    #ins2 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* login / signup / payment */
+    #login-page,
+    #signup,
+    #payment {
+        width: 90%;
+        height: auto;
+        padding: 20px 0 40px;
+        border-width: 6px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    #nothing {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        bottom: 20px;
+    }
+
+    #exiacc {
+        width: auto;
+    }
+
+    form #submit-btnsignup,
+    #login-btnsignup {
+        position: static;
+    }
+
+    /* brand pages: ford / dodge / ferrari / infiniti */
+    #page-logo {
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #car,
+    #car-ferrari,
+    #car-dodge {
+        margin: 0 auto;
+    }
+
+    #car-desc {
+        width: 100%;
+        padding: 0 5%;
+        margin-top: 20px;
+    }
+
+    #videoford {
+        width: 100% !important;
+        height: auto;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .first-table {
+        padding: 30px 5%;
+    }
+
+    #car-table,
+    #car-table tr,
+    #car-table th,
+    #car-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #car-table td {
+        margin-bottom: 20px;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+
+    /* mustang */
+    #carname,
+    #carinfo,
+    #carinfo2 {
+        position: static;
+        width: auto;
+        margin: 20px 5% 0;
+        top: 0;
+    }
+
+    #cargal,
+    #cargal tr,
+    #cargal td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #cargal {
+        margin: 20px auto;
+        right: 0;
+        top: 0;
+    }
+
+    .TDbutton {
+        position: static;
+        display: inline-block;
+        margin: 15px 2%;
+    }
+
+    .cuscarimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #carspecs {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 700px;
+    }
+
+    /* extended warranty */
+    .w1 {
+        width: 90%;
+        margin-left: 5%;
+        padding: 30px 20px;
+    }
+
+    #brb,
+    #f3 {
+        margin-left: 0;
+        max-width: 100%;
+        left: 0;
+        bottom: 0;
+        top: 0;
+    }
+
+    /* The desktop layout uses "top: Npx" relative offsets on each label to
+       stagger two side-by-side columns into a specific vertical rhythm.
+       Once the columns stack into one column on mobile those fixed offsets
+       just overlap unrelated fields, so give every field its own normal,
+       static spacing instead. */
+    #gg,
+    .lname,
+    .carc,
+    .rdate,
+    .phn,
+    .pdate,
+    .vp,
+    .Pcode,
+    label.email {
+        position: static;
+        display: block;
+        margin-top: 18px;
+    }
+
+    .w1 input,
+    .w1 select {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .vp {
+        width: 100%;
+    }
+
+    #sub {
+        position: static;
+        display: inline-block;
+        margin-top: 25px;
+    }
+}
+
+/* ==========================================================================
+   Phone breakpoint
+   ========================================================================== */
+@media (max-width: 600px) {
+    #logo {
+        font-size: 1.1em;
+    }
+
+    #footer {
+        height: auto;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    .footerheading {
+        margin-right: 0;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    #careerdes {
+        font-size: 1.1em;
+    }
+
+    #car-desc {
+        font-size: 1rem;
+    }
+
+    .cnewcard,
+    .newcard {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .footerheading {
+        width: 100%;
+    }
+
+    .homeparagraph h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* ==========================================================================
+   "Medium" gap (laptops / small desktops roughly 1000-1300px).
+   The nav and the mobile stacking above already handle <=1000px; a few
+   elements below were built with fixed pixel widths/margins tuned for a
+   much wider (1300px+) desktop and overflow horizontally in this gap
+   without needing the full mobile layout treatment.
+   ========================================================================== */
+@media (min-width: 1001px) and (max-width: 1300px) {
+    .homelinks {
+        position: static;
+        display: flex;
+        gap: 15px;
+        margin: 20px 0 20px 13%;
+    }
+
+    .w1 {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #carspecs {
+        max-width: 100%;
+    }
+
+    .cuscarimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #videoford {
+        max-width: calc(100% - 130px);
+        height: auto;
+    }
 }

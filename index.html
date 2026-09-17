@@ -8,6 +8,7 @@
   <title>Halem Motors</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="halemphotos/favicon.ico">
+  <script src="func.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +18,10 @@
         <h1>Halem Motors</h1>
       </a>
     </div>
-    <nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="siteNav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
@@ -53,13 +57,13 @@
   </header>
   <div class="homeparagraph" id="imglinkshome">
 
-    <h2>Who are we?<br><br></h2>
-    <p>Welcome to Halem Motors, your premier destination for exotic cars in Egypt.<br> We specialize in importing
-      top-of-the-line vehicles from foreign countries, providing<br> our customers with only the finest selection of
-      luxury automobiles. Our knowledgeable <br>and experienced team is dedicated to ensuring your complete
-      satisfaction, from the <br>moment you step into our showroom to the moment you drive off our lot. <br>Discover the
-      thrill of driving a truly exceptional car with Halem Motors. </p>
-    <br>Make sure to join us and <a href="signup.html" id="signupp">sign up now.</a>
+    <h2>Who are we?</h2>
+    <p>Welcome to Halem Motors, your premier destination for exotic cars in Egypt. We specialize in importing
+      top-of-the-line vehicles from foreign countries, providing our customers with only the finest selection of
+      luxury automobiles. Our knowledgeable and experienced team is dedicated to ensuring your complete
+      satisfaction, from the moment you step into our showroom to the moment you drive off our lot. Discover the
+      thrill of driving a truly exceptional car with Halem Motors.</p>
+    <p>Make sure to join us and <a href="signup.html" id="signupp">sign up now.</a></p>
   </div>
 
   <div class="homelinks">
@@ -115,9 +119,7 @@
       </div>
       <div class="footerheading">
         <div class="titles">Info About our company</div>
-        We import luxury cars from abroad and offer<br> a great selection to our customers. Our experienced<br> team
-        aims to provide complete satisfaction from<br> the showroom to the road. Come to Halem Motors<br> for an
-        exceptional driving experience.
+        We import luxury cars from abroad and offer a great selection to our customers. Our experienced team aims to provide complete satisfaction from the showroom to the road. Come to Halem Motors for an exceptional driving experience.
       </div>
       <div class="footerheading">
         <div class="titles">Navigate</div>
@@ -126,7 +128,7 @@
         <a href="careers.html">Career</a>
         <a href="mailto:hazem2hh2@gmail.com">Mail Us</a>
       </div>
-      <div class="footeremail">
+      <div class="footeremail-col">
         <div class="titles">Join Our News letter</div>
         <input type="email" placeholder="Enter your email address" class="footeremail">
         <input type="submit" value="Join" id="footernews">
