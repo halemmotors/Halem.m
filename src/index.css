@@ -1940,6 +1940,15 @@ iframe {
         max-width: 100%;
     }
 
+    /* .submit-btn's 40% width (sized against #payment's desktop 650px box)
+       is too narrow for its own label once #payment drops to 90% of a
+       phone-width screen, clipping "Proceed to checkout". Size it to its
+       content instead, only at this breakpoint. */
+    form .submit-btn {
+        width: auto;
+        padding: 0 24px;
+    }
+
     #nothing {
         flex-wrap: wrap;
         row-gap: 10px;

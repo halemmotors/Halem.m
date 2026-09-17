@@ -16,7 +16,7 @@ export default function Payment() {
       <div className="PartOne">
         <h3>Billing Address</h3>
         <br />
-        <p style={{ fontWeight: 'normal', fontSize: '0.85rem', marginBottom: '10px' }}>
+        <p style={{ fontWeight: 'normal', fontSize: '0.85rem', marginBottom: '10px', width: '250px' }}>
           Demo checkout — this form isn't connected to a real payment processor yet.
         </p>
         <div className="infos">
