@@ -782,86 +782,189 @@ nav a:hover {
 
 #footer {
     width: 100%;
-    height: 200px;
-    margin-top: 2.5%;
     background-color: rgb(10, 10, 10);
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-
+    padding: 50px 50px 30px;
 }
 
 footer {
     margin-top: 2.5%;
 }
 
-.footerheading {
-    display: flex;
-    flex-direction: column;
-    margin-right: 2.5rem;
-
-}
-
-.footeremail-col {
-    display: flex;
-    flex-direction: column;
-    margin-right: 2.5rem;
-}
-
-.titles {
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 20px;
-
-}
-
 #signupp {
     color: red;
 }
 
-#footer a {
-    color: white;
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    max-width: 280px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.footer-mail {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
     text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-style: italic
+    margin-bottom: 18px;
+    transition: color 0.2s;
 }
 
-#footer a:hover {
+.footer-mail:hover {
     color: red;
-    transition: 0.2s;
 }
 
-.footeremail {
-    width: 250px;
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.footer-social a:hover {
+    background-color: red;
+}
+
+.footer-social svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.footer-col a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: red;
+}
+
+.footer-newsletter {
+    max-width: 260px;
+}
+
+.footer-newsletter-copy {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.footer-newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.footer-newsletter-form input {
+    flex: 1;
+    width: auto;
     height: 40px;
     border-radius: 4px;
-    outline: none;
     border: none;
-    padding-left: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    outline: none;
+    padding-left: 0.75rem;
+    font-size: 0.9rem;
 }
 
-.footeremail::placeholder {
+.footer-newsletter-form input::placeholder {
     color: grey;
 }
 
-#footernews {
-    width: 100px;
+.footer-newsletter-form button {
     height: 40px;
+    padding: 0 18px;
     border-radius: 4px;
     background-color: red;
     color: white;
-    font-size: 1rem;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.footer-newsletter-form button:hover {
+    background-color: darkred;
+}
+
+.footer-account-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.footer-account-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-account-links a:hover {
+    color: red;
+}
+
+.footer-account-links span {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 #footer-bottom {
     text-align: center;
-    padding: 7.5px;
-    height: 35px;
+    padding: 15px;
     background-color: darkred;
+    font-size: 0.85rem;
 }
 
 /* css login */
@@ -1647,17 +1750,6 @@ html {
     overflow-x: hidden;
 }
 
-/* The footer used a fixed height that clipped/overlapped its content
-   whenever the columns wrapped onto more than one row (any viewport
-   narrower than ~1400px). Let it grow with its content instead. */
-#footer {
-    height: auto;
-    min-height: 200px;
-    align-items: flex-start;
-    padding-bottom: 20px;
-    row-gap: 20px;
-}
-
 img,
 video,
 iframe {
@@ -2116,17 +2208,45 @@ iframe {
     }
 
     #footer {
-        height: auto;
-        justify-content: center;
-        text-align: center;
-        padding: 20px 20px;
+        padding: 40px 20px 20px;
     }
 
-    .footerheading {
-        margin-right: 0;
+    .footer-top {
+        flex-direction: column;
         align-items: center;
-        width: 45%;
-        margin-bottom: 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-col {
+        align-items: center;
+    }
+
+    .footer-newsletter {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-newsletter-form {
+        max-width: 320px;
+        margin: 0 auto 14px;
+    }
+
+    .footer-account-links {
+        justify-content: center;
     }
 
     #careerdes {
@@ -2145,10 +2265,6 @@ iframe {
 }
 
 @media (max-width: 420px) {
-    .footerheading {
-        width: 100%;
-    }
-
     .homeparagraph h2 {
         font-size: 1.4rem;
     }

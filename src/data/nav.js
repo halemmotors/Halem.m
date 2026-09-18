@@ -30,31 +30,36 @@ export const primaryNav = [
   { label: 'Login', to: '/login' },
 ];
 
+export const footerTagline = 'Importing exotic cars to Egypt, from showroom to your door.';
+
+export const footerEmail = 'hazem2hh2@gmail.com';
+
+export const socialLinks = [
+  { label: 'Facebook', href: '#' },
+  { label: 'Twitter', href: '#' },
+  { label: 'Youtube', href: '#' },
+  { label: 'Instagram', href: '#' },
+];
+
 export const footerColumns = [
   {
-    title: 'Halem',
+    title: 'Explore',
     links: [
       { label: 'Home', to: '/' },
       { label: 'News', to: '/news' },
       { label: 'Partners', to: '/partners' },
+      { label: 'Careers', to: '/careers' },
       { label: 'Contact Us', to: '/contact' },
+      { label: 'About Us', to: '/about' },
     ],
   },
   {
-    title: 'Social',
-    links: [
-      { label: 'Facebook', href: '#' },
-      { label: 'Twitter', href: '#' },
-      { label: 'Youtube', href: '#' },
-      { label: 'Instagram', href: '#' },
-    ],
-  },
-  {
-    title: 'Service',
+    title: 'Services',
     links: [
       { label: 'Extended Warranty', to: '/extended-warranty' },
       { label: 'Customization', to: '/customization' },
       { label: 'Insurance', to: '/insurance' },
+      { label: 'Payment', to: '/payment' },
     ],
   },
   {
@@ -66,13 +71,6 @@ export const footerColumns = [
       { label: 'Ford', to: '/brands/ford' },
     ],
   },
-];
-
-export const footerNavigateLinks = [
-  { label: 'Payment', to: '/payment' },
-  { label: 'About Us', to: '/about' },
-  { label: 'Career', to: '/careers' },
-  { label: 'Mail Us', href: 'mailto:hazem2hh2@gmail.com' },
 ];
 
 export const companyBlurb =
